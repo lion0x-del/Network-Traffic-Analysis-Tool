@@ -33,10 +33,15 @@ It provides visualizations of traffic patterns and includes a simple detection m
 
 NetCaptureLite/
 ├── [capture.sh](http://capture.sh/) # Script to capture packets using TShark
+
 ├── parse_and_plot.py # Python script to analyze and visualize traffic
+
 ├── traffic.csv # Captured network traffic data (CSV)
+
 ├── traffic_over_time.png # Graph: traffic volume over time
+
 ├── top_source_ips.png # Graph: top 5 source IPs
+
 └── [README.md](http://readme.md/) # Project description and instructions
 
 ---
@@ -49,7 +54,7 @@ TShark is the command-line version of Wireshark used for packet capturing.
 
 **Ubuntu/Debian**
 
-```bash
+```
 sudo apt update
 sudo apt install tshark
 Fedora
@@ -72,23 +77,19 @@ If not installed:
 
 Ubuntu/Debian
 
-bash
-Copy code
+
 sudo apt install python3 python3-pip
 Windows
 Download from → <https://www.python.org/downloads/>
 
 4. Install Python Dependencies
-bash
-Copy code
+
 pip3 install pandas matplotlib
 (Use pip if pip3 is not available)
 
 5. Configure the Capture Script
 Edit capture.sh and set your network interface:
 
-bash
-Copy code
 INTERFACE="wlan0"   # Change this to your active network interface
 Find your interface:
 ip a
